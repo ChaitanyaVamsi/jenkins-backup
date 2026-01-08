@@ -1,0 +1,146 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<linked-hash-map>
+  <entry>
+    <string>2</string>
+    <Tag plugin="workflow-support@1010.vb_b_39488a_9841">
+      <node class="org.jenkinsci.plugins.workflow.graph.FlowStartNode" plugin="workflow-api@1384.vdc05a_48f535f">
+        <parentIds/>
+        <id>2</id>
+      </node>
+      <actions>
+        <wf.a.TimingAction plugin="workflow-api@1384.vdc05a_48f535f">
+          <startTime>1767884566338</startTime>
+        </wf.a.TimingAction>
+        <wf.a.ErrorAction plugin="workflow-api@1384.vdc05a_48f535f">
+          <error class="org.jenkinsci.plugins.workflow.cps.CpsCompilationErrorsException" plugin="workflow-cps@4238.va_6fb_65c1f699">
+            <detailMessage>startup failed:
+/var/lib/jenkins/jobs/catalogue-ci-multibranch/branches/new-feature/builds/7/libs/3cc4e42b27c302527a4cdb3418cc781fed83f9f0d06a0d5199da4878b6846cd6/vars/nodeJsEksPipeline.groovy: 170: unexpected token: false @ line 170, column 25.
+                     wait: false,
+                           ^
+
+1 error
+</detailMessage>
+            <stackTrace>
+              <trace>org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)</trace>
+              <trace>org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)</trace>
+              <trace>org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)</trace>
+              <trace>org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)</trace>
+              <trace>org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:349)</trace>
+              <trace>org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:225)</trace>
+              <trace>org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:191)</trace>
+              <trace>org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:233)</trace>
+              <trace>org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:189)</trace>
+              <trace>org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:966)</trace>
+              <trace>org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:626)</trace>
+              <trace>org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:602)</trace>
+              <trace>org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:579)</trace>
+              <trace>groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:323)</trace>
+              <trace>groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:293)</trace>
+              <trace>groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:279)</trace>
+              <trace>groovy.lang.GroovyClassLoader.recompile(GroovyClassLoader.java:786)</trace>
+              <trace>groovy.lang.GroovyClassLoader.loadClass(GroovyClassLoader.java:743)</trace>
+              <trace>groovy.lang.GroovyClassLoader.loadClass(GroovyClassLoader.java:812)</trace>
+              <trace>java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:579)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsGroovyShell$TimingLoader.loadClass(CpsGroovyShell.java:231)</trace>
+              <trace>java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:579)</trace>
+              <trace>groovy.lang.GroovyClassLoader.loadClass(GroovyClassLoader.java:702)</trace>
+              <trace>groovy.lang.GroovyClassLoader.loadClass(GroovyClassLoader.java:812)</trace>
+              <trace>groovy.lang.GroovyClassLoader.loadClass(GroovyClassLoader.java:800)</trace>
+              <trace>PluginClassLoader for pipeline-groovy-lib//org.jenkinsci.plugins.workflow.cps.global.UserDefinedGlobalVariable.getValue(UserDefinedGlobalVariable.java:52)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:115)</trace>
+              <trace>jdk.internal.reflect.GeneratedMethodAccessor561.invoke(Unknown Source)</trace>
+              <trace>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</trace>
+              <trace>java.base/java.lang.reflect.Method.invoke(Method.java:569)</trace>
+              <trace>org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)</trace>
+              <trace>groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)</trace>
+              <trace>groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)</trace>
+              <trace>groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)</trace>
+              <trace>org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:41)</trace>
+              <trace>org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)</trace>
+              <trace>org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)</trace>
+              <trace>PluginClassLoader for script-security//org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:180)</trace>
+              <trace>PluginClassLoader for script-security//org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)</trace>
+              <trace>PluginClassLoader for script-security//org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:163)</trace>
+              <trace>PluginClassLoader for script-security//org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:148)</trace>
+              <trace>PluginClassLoader for script-security//org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:178)</trace>
+              <trace>PluginClassLoader for script-security//org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:182)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.LoggingInvoker.methodCall(LoggingInvoker.java:120)</trace>
+              <trace>WorkflowScript.run(WorkflowScript:8)</trace>
+              <trace>___cps.transform___(Native Method)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:107)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:118)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:87)</trace>
+              <trace>jdk.internal.reflect.GeneratedMethodAccessor172.invoke(Unknown Source)</trace>
+              <trace>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</trace>
+              <trace>java.base/java.lang.reflect.Method.invoke(Method.java:569)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:71)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.impl.LocalVariableBlock$LocalVariable.get(LocalVariableBlock.java:39)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.LValueBlock$GetAdapter.receive(LValueBlock.java:30)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.impl.LocalVariableBlock.evalLValue(LocalVariableBlock.java:28)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.LValueBlock$BlockImpl.eval(LValueBlock.java:54)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.LValueBlock.eval(LValueBlock.java:16)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.Next.step(Next.java:84)</trace>
+              <trace>PluginClassLoader for workflow-cps//com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:142)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$001(SandboxContinuable.java:17)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:48)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:188)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:464)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:372)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:302)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService.lambda$wrap$4(CpsVmExecutorService.java:143)</trace>
+              <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+              <trace>hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:139)</trace>
+              <trace>jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)</trace>
+              <trace>jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)</trace>
+              <trace>jenkins.util.ErrorLoggingExecutorService.lambda$wrap$0(ErrorLoggingExecutorService.java:51)</trace>
+              <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)</trace>
+              <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+              <trace>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)</trace>
+              <trace>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$1.call(CpsVmExecutorService.java:53)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$1.call(CpsVmExecutorService.java:50)</trace>
+              <trace>org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:136)</trace>
+              <trace>org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:275)</trace>
+              <trace>PluginClassLoader for workflow-cps//org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService.lambda$categoryThreadFactory$0(CpsVmExecutorService.java:50)</trace>
+              <trace>java.base/java.lang.Thread.run(Thread.java:840)</trace>
+            </stackTrace>
+            <suppressedExceptions>
+              <wf.a.ErrorAction_-ErrorId plugin="workflow-api@1384.vdc05a_48f535f">
+                <stackTrace/>
+                <suppressedExceptions class="empty-list"/>
+                <uuid>b38a826c-b9da-43b4-b9cd-1a8c34494112</uuid>
+              </wf.a.ErrorAction_-ErrorId>
+            </suppressedExceptions>
+          </error>
+        </wf.a.ErrorAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>3</string>
+    <Tag plugin="workflow-support@1010.vb_b_39488a_9841">
+      <node class="org.jenkinsci.plugins.workflow.graph.FlowEndNode" plugin="workflow-api@1384.vdc05a_48f535f">
+        <parentIds>
+          <string>2</string>
+        </parentIds>
+        <id>3</id>
+        <startId>2</startId>
+        <result>
+          <name>FAILURE</name>
+          <ordinal>2</ordinal>
+          <color>RED</color>
+          <completeBuild>true</completeBuild>
+        </result>
+      </node>
+      <actions>
+        <wf.a.ErrorAction plugin="workflow-api@1384.vdc05a_48f535f">
+          <error class="org.jenkinsci.plugins.workflow.cps.CpsCompilationErrorsException" reference="../../../../../entry/Tag/actions/wf.a.ErrorAction/error"/>
+        </wf.a.ErrorAction>
+        <wf.a.TimingAction plugin="workflow-api@1384.vdc05a_48f535f">
+          <startTime>1767884566395</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+</linked-hash-map>

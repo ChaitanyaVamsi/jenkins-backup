@@ -1,0 +1,226 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<linked-hash-map>
+  <entry>
+    <string>2</string>
+    <Tag plugin="workflow-support@1010.vb_b_39488a_9841">
+      <node class="org.jenkinsci.plugins.workflow.graph.FlowStartNode" plugin="workflow-api@1384.vdc05a_48f535f">
+        <parentIds/>
+        <id>2</id>
+      </node>
+      <actions>
+        <wf.a.TimingAction plugin="workflow-api@1384.vdc05a_48f535f">
+          <startTime>1767878450662</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>3</string>
+    <Tag plugin="workflow-support@1010.vb_b_39488a_9841">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4238.va_6fb_65c1f699">
+        <parentIds>
+          <string>2</string>
+        </parentIds>
+        <id>3</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.ExecutorStep</descriptorId>
+      </node>
+      <actions>
+        <s.a.LogStorageAction/>
+        <wf.a.TimingAction plugin="workflow-api@1384.vdc05a_48f535f">
+          <startTime>1767878451169</startTime>
+        </wf.a.TimingAction>
+        <org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution_-QueueItemActionImpl plugin="workflow-durable-task-step@1464.v2d3f5c68f84c">
+          <id>22</id>
+        </org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution_-QueueItemActionImpl>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>4</string>
+    <Tag plugin="workflow-support@1010.vb_b_39488a_9841">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4238.va_6fb_65c1f699">
+        <parentIds>
+          <string>3</string>
+        </parentIds>
+        <id>4</id>
+        <startId>3</startId>
+      </node>
+      <actions>
+        <wf.a.TimingAction plugin="workflow-api@1384.vdc05a_48f535f">
+          <startTime>1767878471097</startTime>
+        </wf.a.TimingAction>
+        <wf.a.ErrorAction plugin="workflow-api@1384.vdc05a_48f535f">
+          <error class="org.jenkinsci.plugins.workflow.steps.FlowInterruptedException" plugin="workflow-step-api@710.v3e456cc85233">
+            <stackTrace>
+              <trace>PluginClassLoader for workflow-durable-task-step//org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution$CancelledItemListener.onLeft(ExecutorStepExecution.java:284)</trace>
+              <trace>hudson.model.Queue$LeftItem.lambda$enter$0(Queue.java:2826)</trace>
+              <trace>jenkins.util.Listeners.lambda$notify$0(Listeners.java:59)</trace>
+              <trace>jenkins.util.Listeners.notify(Listeners.java:67)</trace>
+              <trace>hudson.model.Queue$LeftItem.enter(Queue.java:2826)</trace>
+              <trace>hudson.model.Queue$Item.cancel(Queue.java:2454)</trace>
+              <trace>hudson.model.Queue.cancel(Queue.java:750)</trace>
+              <trace>hudson.model.Queue.doCancelItem(Queue.java:767)</trace>
+              <trace>java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:732)</trace>
+              <trace>org.kohsuke.stapler.Function$MethodFunction.invoke(Function.java:484)</trace>
+              <trace>org.kohsuke.stapler.Function$InstanceFunction.invoke(Function.java:497)</trace>
+              <trace>org.kohsuke.stapler.interceptor.RequirePOST$Processor.invoke(RequirePOST.java:79)</trace>
+              <trace>org.kohsuke.stapler.PreInvokeInterceptedFunction.invoke(PreInvokeInterceptedFunction.java:26)</trace>
+              <trace>org.kohsuke.stapler.Function.bindAndInvoke(Function.java:218)</trace>
+              <trace>org.kohsuke.stapler.Function.bindAndInvokeAndServeResponse(Function.java:140)</trace>
+              <trace>org.kohsuke.stapler.MetaClass$12.doDispatch(MetaClass.java:686)</trace>
+              <trace>org.kohsuke.stapler.NameBasedDispatcher.dispatch(NameBasedDispatcher.java:61)</trace>
+              <trace>org.kohsuke.stapler.Stapler.tryInvoke(Stapler.java:800)</trace>
+              <trace>org.kohsuke.stapler.Stapler.invoke(Stapler.java:938)</trace>
+              <trace>org.kohsuke.stapler.MetaClass$2.doDispatch(MetaClass.java:244)</trace>
+              <trace>org.kohsuke.stapler.NameBasedDispatcher.dispatch(NameBasedDispatcher.java:61)</trace>
+              <trace>org.kohsuke.stapler.Stapler.tryInvoke(Stapler.java:800)</trace>
+              <trace>org.kohsuke.stapler.Stapler.invoke(Stapler.java:938)</trace>
+              <trace>org.kohsuke.stapler.Stapler.invoke(Stapler.java:721)</trace>
+              <trace>org.kohsuke.stapler.Stapler.service(Stapler.java:253)</trace>
+              <trace>Jenkins Main ClassLoader//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.ServletHolder.handle(ServletHolder.java:780)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1668)</trace>
+              <trace>hudson.util.PluginServletFilter$1.doFilter(PluginServletFilter.java:204)</trace>
+              <trace>PluginClassLoader for metrics//jenkins.metrics.impl.MetricsFilter.doFilter(MetricsFilter.java:125)</trace>
+              <trace>hudson.util.PluginServletFilter$1.doFilter(PluginServletFilter.java:201)</trace>
+              <trace>jenkins.util.HttpServletFilter$1.doFilter(HttpServletFilter.java:77)</trace>
+              <trace>hudson.util.PluginServletFilter$1.doFilter(PluginServletFilter.java:201)</trace>
+              <trace>hudson.util.PluginServletFilter.doFilter(PluginServletFilter.java:207)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.FilterHolder.doFilter(FilterHolder.java:202)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1638)</trace>
+              <trace>jenkins.ErrorAttributeFilter.doFilter(ErrorAttributeFilter.java:29)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.FilterHolder.doFilter(FilterHolder.java:202)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1638)</trace>
+              <trace>hudson.security.csrf.CrumbFilter.doFilter(CrumbFilter.java:154)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.FilterHolder.doFilter(FilterHolder.java:202)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1638)</trace>
+              <trace>hudson.security.ChainedServletFilter2$1.doFilter(ChainedServletFilter2.java:94)</trace>
+              <trace>jenkins.security.AcegiSecurityExceptionFilter.doFilter(AcegiSecurityExceptionFilter.java:52)</trace>
+              <trace>hudson.security.ChainedServletFilter2$1.doFilter(ChainedServletFilter2.java:99)</trace>
+              <trace>hudson.security.UnwrapSecurityExceptionFilter.doFilter(UnwrapSecurityExceptionFilter.java:54)</trace>
+              <trace>hudson.security.ChainedServletFilter2$1.doFilter(ChainedServletFilter2.java:99)</trace>
+              <trace>org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)</trace>
+              <trace>org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)</trace>
+              <trace>hudson.security.ChainedServletFilter2$1.doFilter(ChainedServletFilter2.java:99)</trace>
+              <trace>org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)</trace>
+              <trace>hudson.security.ChainedServletFilter2$1.doFilter(ChainedServletFilter2.java:99)</trace>
+              <trace>org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:114)</trace>
+              <trace>org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:105)</trace>
+              <trace>hudson.security.ChainedServletFilter2$1.doFilter(ChainedServletFilter2.java:99)</trace>
+              <trace>org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:235)</trace>
+              <trace>org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:229)</trace>
+              <trace>hudson.security.ChainedServletFilter2$1.doFilter(ChainedServletFilter2.java:99)</trace>
+              <trace>jenkins.security.BasicHeaderProcessor.doFilter(BasicHeaderProcessor.java:106)</trace>
+              <trace>hudson.security.ChainedServletFilter2$1.doFilter(ChainedServletFilter2.java:99)</trace>
+              <trace>org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:117)</trace>
+              <trace>org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)</trace>
+              <trace>hudson.security.HttpSessionContextIntegrationFilter2.doFilter(HttpSessionContextIntegrationFilter2.java:63)</trace>
+              <trace>hudson.security.ChainedServletFilter2$1.doFilter(ChainedServletFilter2.java:99)</trace>
+              <trace>hudson.security.ChainedServletFilter2.doFilter(ChainedServletFilter2.java:111)</trace>
+              <trace>hudson.security.HudsonFilter.doFilter(HudsonFilter.java:173)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.FilterHolder.doFilter(FilterHolder.java:202)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1638)</trace>
+              <trace>org.kohsuke.stapler.UncaughtExceptionFilter.doFilter(UncaughtExceptionFilter.java:26)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.FilterHolder.doFilter(FilterHolder.java:202)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1638)</trace>
+              <trace>hudson.util.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:86)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.FilterHolder.doFilter(FilterHolder.java:202)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1638)</trace>
+              <trace>org.kohsuke.stapler.DiagnosticThreadNameFilter.doFilter(DiagnosticThreadNameFilter.java:31)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.FilterHolder.doFilter(FilterHolder.java:202)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1638)</trace>
+              <trace>jenkins.security.SuspiciousRequestFilter.doFilter(SuspiciousRequestFilter.java:38)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.FilterHolder.doFilter(FilterHolder.java:202)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1638)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.ServletHandler.doHandle(ServletHandler.java:526)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.nested.ScopedHandler.handle(ScopedHandler.java:127)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.security.SecurityHandler.handle(SecurityHandler.java:574)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.nested.HandlerWrapper.handle(HandlerWrapper.java:124)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.nested.ScopedHandler.nextHandle(ScopedHandler.java:197)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.nested.SessionHandler.doHandle(SessionHandler.java:612)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.nested.ScopedHandler.nextHandle(ScopedHandler.java:195)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.nested.ContextHandler.doHandle(ContextHandler.java:1045)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.nested.ScopedHandler.nextScope(ScopedHandler.java:164)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.servlet.ServletHandler.doScope(ServletHandler.java:483)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.nested.ScopedHandler.nextScope(ScopedHandler.java:162)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.nested.SessionHandler.doScope(SessionHandler.java:589)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.nested.ScopedHandler.nextScope(ScopedHandler.java:162)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.nested.ContextHandler.doScope(ContextHandler.java:966)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.nested.ScopedHandler.handle(ScopedHandler.java:125)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.nested.ContextHandler.handle(ContextHandler.java:1719)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.nested.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1565)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.nested.HttpChannel.dispatch(HttpChannel.java:724)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.nested.HttpChannel.handle(HttpChannel.java:512)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.ee9.nested.ContextHandler$CoreContextHandler$CoreToNestedHandler.handle(ContextHandler.java:3029)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.server.handler.ContextHandler.handle(ContextHandler.java:1071)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:611)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.server.Server.handle(Server.java:182)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.server.internal.HttpChannelState$HandlerInvoker.run(HttpChannelState.java:677)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.server.internal.HttpConnection.onFillable(HttpConnection.java:416)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:322)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:99)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:480)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:443)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:293)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:201)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:311)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:981)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1211)</trace>
+              <trace>Jenkins Main ClassLoader//org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1166)</trace>
+              <trace>java.base/java.lang.Thread.run(Thread.java:840)</trace>
+            </stackTrace>
+            <suppressedExceptions>
+              <wf.a.ErrorAction_-ErrorId plugin="workflow-api@1384.vdc05a_48f535f">
+                <stackTrace/>
+                <suppressedExceptions class="empty-list"/>
+                <uuid>3ba70976-c56f-419a-b224-b3d0ae927a1f</uuid>
+              </wf.a.ErrorAction_-ErrorId>
+            </suppressedExceptions>
+            <result>
+              <name>ABORTED</name>
+              <ordinal>4</ordinal>
+              <color>ABORTED</color>
+              <completeBuild>false</completeBuild>
+            </result>
+            <causes class="java.util.Arrays$ArrayList">
+              <a class="jenkins.model.CauseOfInterruption-array">
+                <org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution_-QueueTaskCancelled plugin="workflow-durable-task-step@1464.v2d3f5c68f84c"/>
+              </a>
+            </causes>
+            <actualInterruption>true</actualInterruption>
+          </error>
+        </wf.a.ErrorAction>
+        <wf.a.ErrorAction plugin="workflow-api@1384.vdc05a_48f535f">
+          <error class="org.jenkinsci.plugins.workflow.steps.FlowInterruptedException" reference="../../wf.a.ErrorAction/error"/>
+        </wf.a.ErrorAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>5</string>
+    <Tag plugin="workflow-support@1010.vb_b_39488a_9841">
+      <node class="org.jenkinsci.plugins.workflow.graph.FlowEndNode" plugin="workflow-api@1384.vdc05a_48f535f">
+        <parentIds>
+          <string>4</string>
+        </parentIds>
+        <id>5</id>
+        <startId>2</startId>
+        <result>
+          <name>ABORTED</name>
+          <ordinal>4</ordinal>
+          <color>ABORTED</color>
+          <completeBuild>false</completeBuild>
+        </result>
+      </node>
+      <actions>
+        <wf.a.ErrorAction plugin="workflow-api@1384.vdc05a_48f535f">
+          <error class="org.jenkinsci.plugins.workflow.steps.FlowInterruptedException" reference="../../../../../entry[3]/Tag/actions/wf.a.ErrorAction/error"/>
+        </wf.a.ErrorAction>
+        <wf.a.TimingAction plugin="workflow-api@1384.vdc05a_48f535f">
+          <startTime>1767878471162</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+</linked-hash-map>
