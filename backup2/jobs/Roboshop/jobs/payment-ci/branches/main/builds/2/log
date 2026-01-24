@@ -1,0 +1,40 @@
+Branch indexing
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/caches/git-0d43101ceae3078733e579f2de5e105b/.git # timeout=10
+Setting origin to https://github.com/ChaitanyaVamsi/jenkins-payment.git
+ > git config remote.origin.url https://github.com/ChaitanyaVamsi/jenkins-payment.git # timeout=10
+Fetching origin...
+Fetching upstream changes from origin
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --no-tags --force --progress -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/main
+Seen branch in repository origin/new-feature
+Seen 2 remote branches
+Obtained Jenkinsfile from 10bece2366f634d9d95da706305fd49d6d27589f
+Loading library jenkins-shared-library@main
+Attempting to resolve main from remote references...
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git ls-remote -h -- https://github.com/ChaitanyaVamsi/jenkins-shared-library.git # timeout=10
+Found match: refs/heads/main revision 9a234faa63082ba140db5a40ed67afe207a2cd5c
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/Roboshop_payment-ci_main@libs/8d5c6fd50fc3578b228afca4badd2d9f2630b478e3101a415a7df7fa02d54f07/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ChaitanyaVamsi/jenkins-shared-library.git # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/ChaitanyaVamsi/jenkins-shared-library.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --no-tags --force --progress -- https://github.com/ChaitanyaVamsi/jenkins-shared-library.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking out Revision 9a234faa63082ba140db5a40ed67afe207a2cd5c (main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9a234faa63082ba140db5a40ed67afe207a2cd5c # timeout=10
+Commit message: "updated"
+ > git rev-list --no-walk 9a234faa63082ba140db5a40ed67afe207a2cd5c # timeout=10
+[8mha:////4AEgP8bis4FSfTQIHJCrCiBkM3WfQqS9PM/ZUt4vCmhUAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4B8cytMjldPZxzDXFkn2wi34h5fk+D+PYYvXb3vtmZEUAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbaGmsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfya1RxvAAAAA==[0m[Pipeline] echo
+Please proceed with PROD process
+[8mha:////4Jlgcw9PT5TPxVfdxlXDwdR6ZuENFYO02ywrGXu8UrJFAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbGDtjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9bqvXovAAAAA==[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

@@ -1,0 +1,174 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1571.vb_423c255d6d9">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <jenkins.branch.BranchIndexingCause plugin="branch-api@2.1268.v044a_87612da_8"/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.2.37-494.v06f9a_939d33a_">
+      <queuingDurationMillis>5149</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>0</buildableDurationMillis>
+      <waitingDurationMillis>5142</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <jenkins.scm.api.SCMRevisionAction plugin="scm-api@724.v7d839074eb_5c">
+      <sourceId>1</sourceId>
+      <revision class="jenkins.plugins.git.GitBranchSCMRevision" plugin="git@5.8.1">
+        <head class="jenkins.plugins.git.GitBranchSCMHead">
+          <name>main</name>
+        </head>
+        <hash>fbebf5632d5111fd3f0e75c9824a9e120e6b1044</hash>
+      </revision>
+    </jenkins.scm.api.SCMRevisionAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@787.ve2fef0efdca_6">
+      <libraries>
+        <org.jenkinsci.plugins.workflow.libs.LibraryRecord>
+          <name>jenkins-shared-library</name>
+          <version>main</version>
+          <variables class="sorted-set">
+            <string>EksDeploy</string>
+            <string>javaEksPipeline</string>
+            <string>nodeJsEksPipeline</string>
+            <string>pythonEksPipeline</string>
+          </variables>
+          <trusted>true</trusted>
+          <changelog>true</changelog>
+          <logString>jenkins-shared-library@main</logString>
+          <directoryName>6d6f2478bd02bd9e25ebaf3114ab9fcd4b2172eba4602f5f37191b7a9cbe5e64</directoryName>
+        </org.jenkinsci.plugins.workflow.libs.LibraryRecord>
+      </libraries>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <hudson.plugins.git.util.BuildData plugin="git@5.8.1">
+      <buildsByBranchName>
+        <entry>
+          <string>main</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@6.5.0">
+              <sha1>9a234faa63082ba140db5a40ed67afe207a2cd5c</sha1>
+              <branches class="singleton-set">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>main</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>1</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/ChaitanyaVamsi/jenkins-shared-library.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@466.va_d69e602552b_">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/ChaitanyaVamsi/jenkins-shared-library.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@4254.v0c8e228524ea_">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>2</queueId>
+  <timestamp>1769271090699</timestamp>
+  <startTime>1769271090714</startTime>
+  <result>SUCCESS</result>
+  <duration>4499</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>@Library(&apos;jenkins-shared-library&apos;) _
+def config = [
+    project:&quot;roboshop&quot;,
+    component: &quot;catalogue&quot;
+]
+
+if( !env.BRANCH_NAME.equalsIgnoreCase(&apos;main&apos;) ){
+  nodeJsEksPipeline(config)
+}
+else{
+  echo &quot;Follow proper process&quot;
+}</script>
+    <loadedScripts class="linked-hash-map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>51657123</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>84516733</long>
+      </entry>
+      <entry>
+        <string>runQueue</string>
+        <long>182009591</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>231090373</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>3489301020</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>87944168</long>
+      </entry>
+    </timings>
+    <internalCalls class="sorted-set"/>
+    <sandbox>true</sandbox>
+    <iota>4</iota>
+    <head>1:4</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+    <storageDir>workflow-completed</storageDir>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@5.8.1">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <name>origin</name>
+            <refspec>+refs/heads/*:refs/remotes/origin/*</refspec>
+            <url>https://github.com/ChaitanyaVamsi/jenkins-shared-library.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>main</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <jenkins.plugins.git.GitSCMSourceDefaults>
+            <includeTags>false</includeTags>
+          </jenkins.plugins.git.GitSCMSourceDefaults>
+          <hudson.plugins.git.extensions.impl.BuildChooserSetting>
+            <buildChooser class="jenkins.plugins.git.AbstractGitSCMSource$SpecificRevisionBuildChooser">
+              <revision reference="../../../../../../../actions/hudson.plugins.git.util.BuildData/buildsByBranchName/entry/hudson.plugins.git.util.Build/marked"/>
+            </buildChooser>
+          </hudson.plugins.git.extensions.impl.BuildChooserSetting>
+        </extensions>
+      </scm>
+      <node></node>
+      <workspace>/var/lib/jenkins/workspace/Roboshop_catalogue-ci_main@libs/8d5c6fd50fc3578b228afca4badd2d9f2630b478e3101a415a7df7fa02d54f07</workspace>
+      <changelogFile>/var/lib/jenkins/jobs/Roboshop/jobs/catalogue-ci/branches/main/builds/1/changelog17626988795247008298.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

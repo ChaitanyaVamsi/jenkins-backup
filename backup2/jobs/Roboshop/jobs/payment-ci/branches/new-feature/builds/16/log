@@ -1,0 +1,538 @@
+Started by user [8mha:////4NbYkKZE7AGKUavmadF7PBXeF/WzIun5CpQubTywW7BXAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/caches/git-0d43101ceae3078733e579f2de5e105b/.git # timeout=10
+Setting origin to https://github.com/ChaitanyaVamsi/jenkins-payment.git
+ > git config remote.origin.url https://github.com/ChaitanyaVamsi/jenkins-payment.git # timeout=10
+Fetching origin...
+Fetching upstream changes from origin
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --no-tags --force --progress -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/main
+Seen branch in repository origin/new-feature
+Seen 2 remote branches
+Obtained Jenkinsfile from 59fbd47636c585b67ebe427ec9af32b0a4fcc8cf
+Loading library jenkins-shared-library@main
+Attempting to resolve main from remote references...
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git ls-remote -h -- https://github.com/ChaitanyaVamsi/jenkins-shared-library.git # timeout=10
+Found match: refs/heads/main revision 9fe023cac9921e0f88618c33cc47aab4416b7050
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/Roboshop_payment-ci_new-feature@libs/8d5c6fd50fc3578b228afca4badd2d9f2630b478e3101a415a7df7fa02d54f07/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ChaitanyaVamsi/jenkins-shared-library.git # timeout=10
+Fetching without tags
+Fetching upstream changes from https://github.com/ChaitanyaVamsi/jenkins-shared-library.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --no-tags --force --progress -- https://github.com/ChaitanyaVamsi/jenkins-shared-library.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking out Revision 9fe023cac9921e0f88618c33cc47aab4416b7050 (main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9fe023cac9921e0f88618c33cc47aab4416b7050 # timeout=10
+Commit message: "updated"
+ > git rev-list --no-walk 9fe023cac9921e0f88618c33cc47aab4416b7050 # timeout=10
+[8mha:////4AEgP8bis4FSfTQIHJCrCiBkM3WfQqS9PM/ZUt4vCmhUAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4JQQThm6/0abEYDQFkMz7ZuYhL26ie3Zyd/OpN4SU06yAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4GpWMBnzQZwh5cWxhPP1jZkSHSW2K5IxqgBZYuS1PT0uAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZR/eT83ILSktQifY2k0sycEt3MPE19AHHxbH3KAAAA[0mJenkins in /var/lib/jenkins/workspace/Roboshop_payment-ci_new-feature
+[8mha:////4ESub0vDPvjaXUksWnzE816uBWapHkp+TVwwsmVfFGFSAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4LnqbKoZaumYB+Foc9jhjPDzWKQIXjNAtJaCpyUT+B0WAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4G5ZiSf/tFd9EA1FRaaNrbbBP5XA2KJ7T+/sVg8ijmwKAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4JhtHayOsa5htSYSyD/nwzX3HewWV1MSw9I+JbOBXx5DAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/ChaitanyaVamsi/jenkins-payment.git
+ > git init /var/lib/jenkins/workspace/Roboshop_payment-ci_new-feature # timeout=10
+Fetching upstream changes from https://github.com/ChaitanyaVamsi/jenkins-payment.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --no-tags --force --progress -- https://github.com/ChaitanyaVamsi/jenkins-payment.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/ChaitanyaVamsi/jenkins-payment.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+Checking out Revision 59fbd47636c585b67ebe427ec9af32b0a4fcc8cf (new-feature)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 59fbd47636c585b67ebe427ec9af32b0a4fcc8cf # timeout=10
+Commit message: "Update Dockerfile"
+ > git rev-list --no-walk 59fbd47636c585b67ebe427ec9af32b0a4fcc8cf # timeout=10
+[8mha:////4HGMoUTOgZWfGTC05cwoBOo/5xFyumyDyqhP8dFThAvrAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4CGJGoQoDZjB7lqndOgP7QOzpiaZT61dGXTHLc+16fd9AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4Kuf3dlt+rf/f+RNdlNqEYHp2ad8LtGPbQjSmeWWdWx8AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4J5wA0WYIutP75Y/eVr0OGLELtUK1Vqs7JSMKjE0XWTUAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4N47GBa4KC+c6HubceQeozw9CNIoqKMvEd9G6je80XXuAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] withEnv
+[8mha:////4PCRhLfH9KZsqB7DKYMEOak46afBRL2ZKb3ZS74C3j/xAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] {
+[8mha:////4NAr94if4GsLPUgSlkU6ZzV0vNXz8BjBAkm69+xI/Kn7AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] timeout
+Timeout set to expire in 30 min
+[8mha:////4GZ5O5G9fr1lQ+B1krvsyU/4b7D7thgrcpVKGAuiH+hoAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] {
+[8mha:////4OonWvzh/gO///0jWPdg4BYFS0poXvrOPSnZqMH7p3jiAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] stage
+[8mha:////4EyiTNoZ5pJpTAvzT2om5NyioHe7zyLBtaPIczmas7j2AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] { (Read Version)
+[8mha:////4JOK1laqp/eadq7MleQJDUJs4YSNYTmvTSIqDqrCgcpQAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] script
+[8mha:////4Cy7ZYM8qmwL5XZj+P/fKIzqH/UiNID+QhGEpw+NzhtYAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] {
+[8mha:////4DRnE1Tbvuue2E8LCceAwjwKBpPraSFLSJ9PhqRqYn62AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICdAilorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYI5e6Qa78dPhmQ9Da+AAAA[0m[Pipeline] readFile
+Did you forget the `def` keyword? pythonEksPipeline seems to be setting a field named appVersion (to a value of type String) which could lead to memory leaks or other issues.
+[8mha:////4P0OT7PYhhO0XIpusJJCHIsMli0VxRfxF6qA56UXBX6jAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0CFEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNknKOtDrn3tP1ih7y++AAAA[0m[Pipeline] echo
+app version: 1.0.0
+[8mha:////4GpLowSkbboxGTcwWa7uW8RwkmK4gUy7enlaSmE+DIN1AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIR6RCiSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGVd59ofPoukFhO+AAAA[0m[Pipeline] }
+[8mha:////4IHLJmLaoDG6XQ2TF2bGMPgxfsjvUYqbHtiexNBaGcjMAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEFCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw+4R02vvgAAAA==[0m[Pipeline] // script
+[8mha:////4Pohe+2Mz5TfktlMXUvTpzz3FAY3w+31suagbCjDJMiWAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEBIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryt8+1PXwAkWr3Ir4AAAA=[0m[Pipeline] }
+[8mha:////4KQa8wKVFHzqF0peRRJ3PyubEfyevjN4hCQf4gAhcAyAAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw+iiayevgAAAA==[0m[Pipeline] // stage
+[8mha:////4G7Eox9JwlkviVhUQGaoZFWOy8GZ8r6ShB/7c+70m4lkAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUIMGCOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK52WXb7j/P6g1mJwqBwgAAAA==[0m[Pipeline] stage
+[8mha:////4IGzWml7pMgz7YNrtp84wlqKrCV/PLtJ+W6k3gD5ToDVAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYoABMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAyQCqkwgAAAA==[0m[Pipeline] { (Install Dependencies)
+[8mha:////4LlIt+UyJUVr688u18AasAaORoBtBDYAQ2jDvDV4GLi/AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgEJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAnLfKUwgAAAA==[0m[Pipeline] script
+[8mha:////4PHFe6E/eWQsHrzo6Nh504Z+e/XTWLWDMu/DvC2eKWvBAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0QKVszCAAAA[0m[Pipeline] {
+[8mha:////4OZDApZgZTkIGm9SIFzDYlIzcLl8nz7Nx6CkFEKRXn4bAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AHN/bm5vgAAAA==[0m[Pipeline] sh
++ apt-get update
+Reading package lists...
+E: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)
+E: Unable to lock directory /var/lib/apt/lists/
+W: Problem unlinking the file /var/cache/apt/pkgcache.bin - RemoveCaches (13: Permission denied)
+W: Problem unlinking the file /var/cache/apt/srcpkgcache.bin - RemoveCaches (13: Permission denied)
++ python3 -m venv .venv
++ . .venv/bin/activate
++ deactivate nondestructive
++ [ -n  ]
++ [ -n  ]
++ hash -r
++ [ -n  ]
++ unset VIRTUAL_ENV
++ unset VIRTUAL_ENV_PROMPT
++ [ ! nondestructive = nondestructive ]
++ [  = cygwin ]
++ [  = msys ]
++ export VIRTUAL_ENV=/var/lib/jenkins/workspace/Roboshop_payment-ci_new-feature/.venv
++ _OLD_VIRTUAL_PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/snap/bin
++ PATH=/var/lib/jenkins/workspace/Roboshop_payment-ci_new-feature/.venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/snap/bin
++ export PATH
++ [ -n  ]
++ [ -z  ]
++ _OLD_VIRTUAL_PS1=$ 
++ PS1=(.venv) $ 
++ export PS1
++ VIRTUAL_ENV_PROMPT=(.venv) 
++ export VIRTUAL_ENV_PROMPT
++ hash -r
++ pip install --upgrade pip
+Requirement already satisfied: pip in ./.venv/lib/python3.12/site-packages (24.0)
+Collecting pip
+  Using cached pip-25.3-py3-none-any.whl.metadata (4.7 kB)
+Using cached pip-25.3-py3-none-any.whl (1.8 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 24.0
+    Uninstalling pip-24.0:
+      Successfully uninstalled pip-24.0
+Successfully installed pip-25.3
++ pip install -r requirements.txt
+Collecting uwsgi (from -r requirements.txt (line 1))
+  Using cached uwsgi-2.0.31-cp312-cp312-linux_x86_64.whl
+Collecting Flask (from -r requirements.txt (line 2))
+  Using cached flask-3.1.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting requests (from -r requirements.txt (line 3))
+  Using cached requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting pika (from -r requirements.txt (line 4))
+  Using cached pika-1.3.2-py3-none-any.whl.metadata (13 kB)
+Collecting prometheus_client (from -r requirements.txt (line 5))
+  Using cached prometheus_client-0.24.1-py3-none-any.whl.metadata (2.1 kB)
+Collecting opentracing (from -r requirements.txt (line 6))
+  Using cached opentracing-2.4.0-py3-none-any.whl
+Collecting instana (from -r requirements.txt (line 7))
+  Using cached instana-3.10.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting blinker>=1.9.0 (from Flask->-r requirements.txt (line 2))
+  Using cached blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting click>=8.1.3 (from Flask->-r requirements.txt (line 2))
+  Using cached click-8.3.1-py3-none-any.whl.metadata (2.6 kB)
+Collecting itsdangerous>=2.2.0 (from Flask->-r requirements.txt (line 2))
+  Using cached itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting jinja2>=3.1.2 (from Flask->-r requirements.txt (line 2))
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting markupsafe>=2.1.1 (from Flask->-r requirements.txt (line 2))
+  Using cached markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Collecting werkzeug>=3.1.0 (from Flask->-r requirements.txt (line 2))
+  Using cached werkzeug-3.1.5-py3-none-any.whl.metadata (4.0 kB)
+Collecting charset_normalizer<4,>=2 (from requests->-r requirements.txt (line 3))
+  Using cached charset_normalizer-3.4.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (37 kB)
+Collecting idna<4,>=2.5 (from requests->-r requirements.txt (line 3))
+  Using cached idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting urllib3<3,>=1.21.1 (from requests->-r requirements.txt (line 3))
+  Using cached urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+Collecting certifi>=2017.4.17 (from requests->-r requirements.txt (line 3))
+  Using cached certifi-2026.1.4-py3-none-any.whl.metadata (2.5 kB)
+Collecting autowrapt>=1.0 (from instana->-r requirements.txt (line 7))
+  Using cached autowrapt-1.0-py3-none-any.whl
+Collecting fysom>=2.1.2 (from instana->-r requirements.txt (line 7))
+  Using cached fysom-2.1.6-py3-none-any.whl
+Collecting opentelemetry-api>=1.27.0 (from instana->-r requirements.txt (line 7))
+  Using cached opentelemetry_api-1.39.1-py3-none-any.whl.metadata (1.5 kB)
+Collecting opentelemetry-semantic-conventions>=0.48b0 (from instana->-r requirements.txt (line 7))
+  Using cached opentelemetry_semantic_conventions-0.60b1-py3-none-any.whl.metadata (2.4 kB)
+Collecting pyyaml>=6.0.2 (from instana->-r requirements.txt (line 7))
+  Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting typing-extensions>=4.12.2 (from instana->-r requirements.txt (line 7))
+  Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting wrapt>=1.10.4 (from autowrapt>=1.0->instana->-r requirements.txt (line 7))
+  Using cached wrapt-2.0.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (9.0 kB)
+Collecting importlib-metadata<8.8.0,>=6.0 (from opentelemetry-api>=1.27.0->instana->-r requirements.txt (line 7))
+  Using cached importlib_metadata-8.7.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting zipp>=3.20 (from importlib-metadata<8.8.0,>=6.0->opentelemetry-api>=1.27.0->instana->-r requirements.txt (line 7))
+  Using cached zipp-3.23.0-py3-none-any.whl.metadata (3.6 kB)
+Using cached flask-3.1.2-py3-none-any.whl (103 kB)
+Using cached requests-2.32.5-py3-none-any.whl (64 kB)
+Using cached charset_normalizer-3.4.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (153 kB)
+Using cached idna-3.11-py3-none-any.whl (71 kB)
+Using cached urllib3-2.6.3-py3-none-any.whl (131 kB)
+Using cached pika-1.3.2-py3-none-any.whl (155 kB)
+Using cached prometheus_client-0.24.1-py3-none-any.whl (64 kB)
+Using cached instana-3.10.1-py3-none-any.whl (178 kB)
+Using cached blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Using cached certifi-2026.1.4-py3-none-any.whl (152 kB)
+Using cached click-8.3.1-py3-none-any.whl (108 kB)
+Using cached itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Using cached opentelemetry_api-1.39.1-py3-none-any.whl (66 kB)
+Using cached importlib_metadata-8.7.1-py3-none-any.whl (27 kB)
+Using cached opentelemetry_semantic_conventions-0.60b1-py3-none-any.whl (219 kB)
+Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Using cached werkzeug-3.1.5-py3-none-any.whl (225 kB)
+Using cached wrapt-2.0.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (121 kB)
+Using cached zipp-3.23.0-py3-none-any.whl (10 kB)
+Installing collected packages: uwsgi, opentracing, fysom, zipp, wrapt, urllib3, typing-extensions, pyyaml, prometheus_client, pika, markupsafe, itsdangerous, idna, click, charset_normalizer, certifi, blinker, werkzeug, requests, jinja2, importlib-metadata, autowrapt, opentelemetry-api, Flask, opentelemetry-semantic-conventions, instana
+
+Successfully installed Flask-3.1.2 autowrapt-1.0 blinker-1.9.0 certifi-2026.1.4 charset_normalizer-3.4.4 click-8.3.1 fysom-2.1.6 idna-3.11 importlib-metadata-8.7.1 instana-3.10.1 itsdangerous-2.2.0 jinja2-3.1.6 markupsafe-3.0.3 opentelemetry-api-1.39.1 opentelemetry-semantic-conventions-0.60b1 opentracing-2.4.0 pika-1.3.2 prometheus_client-0.24.1 pyyaml-6.0.3 requests-2.32.5 typing-extensions-4.15.0 urllib3-2.6.3 uwsgi-2.0.31 werkzeug-3.1.5 wrapt-2.0.1 zipp-3.23.0
+[8mha:////4GP8XWY0RUZpyprABH0lDWlatWxi++uixCpKEl85vUeKAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AFSjtgYvgAAAA==[0m[Pipeline] }
+[8mha:////4I/tE3IrFuTQZK111USpcXhX8RqUDp4ANfOl5/FKBf/PAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihQYJUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5r3PVhw9qzEvpvgAAAA==[0m[Pipeline] // script
+[8mha:////4H8V/Bq8446tDa3kJPVAB22F18XkYAiljnheygvciNmLAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRSEGBqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkFZ17n2hw9eAqiyvgAAAA==[0m[Pipeline] }
+[8mha:////4NJ2DftpL4yfFr1QKnIpzsCxtIWV9nr4V0h+WMY7M+6sAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAaJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw9wAqrYvgAAAA==[0m[Pipeline] // stage
+[8mha:////4F6w/1cP45QG+8jz3vznG3eOYF/YLDjhGXd5PDv84eEfAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCHVCTF2jLJwgJCGkjf4vSUo7cSKuxh0IVGLCg2Vbst7zBVUMcKRgWWewdxiVY4MfbU5sotBfPE2sozNThJG8YcJMgrRplyooGVhUlLDisDaoPEWHNsGGd/Iuay/R1qcU8nbgUDp9gwcUPJOTDOlb5gDb66gj4Y/zFwDzkKDcNdn2zedZvQF8XumhwgAAAA==[0m[Pipeline] stage
+[8mha:////4BNu/5kCGFtpM6T3AgcKOTkoIuKtD9TcEzy1dspHUpyPAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD02yRsvCAAAA[0m[Pipeline] { (unit Test)
+[8mha:////4PVDg9DjlbG8I1Q0WeSgN94f1Got1W47tOHH0/1R51n9AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QIIBMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfADpB/iZwgAAAA==[0m[Pipeline] script
+[8mha:////4FcqlVGaieNvDqxc0UVSMmCY1O2aE2heiSgEjCgj6uNoAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YAAJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAD8aiCpwgAAAA==[0m[Pipeline] {
+[8mha:////4AoS5kOcZqmdwDM6aKIrqZUoxZ4/8EwvDVytYukOm0c6AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJS0IAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN65NpgK+AAAA[0m[Pipeline] sh
++ echo test
+test
+[8mha:////4Bk0rO4aZIaswuN8uoHll7fJrNumI2c7n7JS2EQtfv+hAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBAUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wArmI/eL4AAAA=[0m[Pipeline] }
+[8mha:////4DwPO1rInyCPRCVrdsD74++g4uPkuQzjlyrmeUKvA0unAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBBIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wAmqzcI74AAAA=[0m[Pipeline] // script
+[8mha:////4H7QJH9VsxFCk9JfD9+iSkVBGQuNQKvEk3ykg1BCmekwAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAaJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw+i7k/SvgAAAA==[0m[Pipeline] }
+[8mha:////4F6KHGMoXDD4HngsPzaubzty1I6DWyiGSoZrdw+aXva2AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSBCpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOW+zlUfPr1sGoC+AAAA[0m[Pipeline] // stage
+[8mha:////4KdpseG8xw088ja1B/Z4VJOskgNIjrv+pYWDi7zchWCxAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSGVCTF2jLJwgJCGkjf4vSUo7cSKuxh0IVGLCg2Vbst7zBVUMcKRgWWewdxiVY4MfbU5sotBfPE2sozNThJG8YcJMgrRplyooGVhUlLDisDaoPEWHNsGGd/Iuay/R1qcU8nbgUDp9gwcUPJOTDOlb5gDb66gj4Y/zFwDzkKDc7bM1zedZvQFXsxKvwgAAAA==[0m[Pipeline] stage
+[8mha:////4IM9er+Jjz3oFcLgSK7ULPJq5p40Ly1MnMOsgepelORNAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KRNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPIshjPcIAAAA=[0m[Pipeline] { (Build Image)
+[8mha:////4Lr0ilGGuD6/9WIDWzNx+q8fcCoyWoClnrF5TWPDY5ClAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ARbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAUxleXrCAAAA[0m[Pipeline] script
+[8mha:////4Fhiw1WGh0ajm8nqzhE8ALYOU+B+0XsfeBXeOeQr1lQAAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QTAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD+jQxyjCAAAA[0m[Pipeline] {
+[8mha:////4JsTXsnQhJ+3z0XqRrNXIzQWp94YJh4yEGClB09JfdAnAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QQIJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAD9vR8YwgAAAA==[0m[Pipeline] withAWS
+Constructing AWS CredentialsSetting AWS region us-east-1 
+ [8mha:////4LHdMHCqPM58bA3Dk2lTPc4nu0gXNuQHFyTV/we15nvRAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YQAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD56au0DCAAAA[0m[Pipeline] {
+[8mha:////4PhrDelxfgfMEYVYLzfbZQAzRsNVsCRnpC70hD3d0REPAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCAQVCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw/4iFt7vgAAAA==[0m[Pipeline] sh
++ docker login --username AWS --password-stdin 471112667143.dkr.ecr.us-east-1.amazonaws.com
++ aws ecr get-login-password --region us-east-1
+
+WARNING! Your credentials are stored unencrypted in '/var/lib/jenkins/.docker/config.json'.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/go/credential-store/
+
+Login Succeeded
++ docker build -t roboshop/payment:1.0.0 .
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  30.73MB
+Step 1/16 : FROM python:3.9.25-alpine3.21 AS builder
+ ---> a87fee7d2afa
+Step 2/16 : WORKDIR /opt/server
+ ---> Running in 6e83e0e5abb2
+ ---> Removed intermediate container 6e83e0e5abb2
+ ---> aeadab5fcf89
+Step 3/16 : RUN apk add --no-cache   build-base   linux-headers   pcre-dev
+ ---> Running in d98a075eae6b
+fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/APKINDEX.tar.gz
+fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/community/x86_64/APKINDEX.tar.gz
+(1/28) Installing libgcc (14.2.0-r4)
+(2/28) Installing jansson (2.14-r4)
+(3/28) Installing libstdc++ (14.2.0-r4)
+(4/28) Installing zstd-libs (1.5.6-r2)
+(5/28) Installing binutils (2.43.1-r3)
+(6/28) Installing libmagic (5.46-r2)
+(7/28) Installing file (5.46-r2)
+(8/28) Installing libgomp (14.2.0-r4)
+(9/28) Installing libatomic (14.2.0-r4)
+(10/28) Installing gmp (6.3.0-r2)
+(11/28) Installing isl26 (0.26-r1)
+(12/28) Installing mpfr4 (4.2.1-r0)
+(13/28) Installing mpc1 (1.3.1-r1)
+(14/28) Installing gcc (14.2.0-r4)
+(15/28) Installing libstdc++-dev (14.2.0-r4)
+(16/28) Installing musl-dev (1.2.5-r9)
+(17/28) Installing g++ (14.2.0-r4)
+(18/28) Installing make (4.4.1-r2)
+(19/28) Installing fortify-headers (1.1-r5)
+(20/28) Installing patch (2.7.6-r10)
+(21/28) Installing build-base (0.5-r3)
+(22/28) Installing linux-headers (6.6-r1)
+(23/28) Installing libpcre16 (8.45-r3)
+(24/28) Installing libpcre32 (8.45-r3)
+(25/28) Installing pcre (8.45-r3)
+(26/28) Installing libpcrecpp (8.45-r3)
+(27/28) Installing pkgconf (2.3.0-r0)
+(28/28) Installing pcre-dev (8.45-r3)
+Executing busybox-1.37.0-r13.trigger
+OK: 257 MiB in 65 packages
+ ---> Removed intermediate container d98a075eae6b
+ ---> 7928f0a4e51f
+Step 4/16 : COPY requirements.txt .
+ ---> 87a43640b4b4
+Step 5/16 : RUN pip3 install --prefix=/install -r requirements.txt
+ ---> Running in 8f980c3aa501
+Collecting uwsgi
+  Downloading uwsgi-2.0.31.tar.gz (822 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 822.8/822.8 kB 28.6 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting Flask
+  Downloading flask-3.1.2-py3-none-any.whl (103 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.3/103.3 kB 13.6 MB/s eta 0:00:00
+Collecting requests
+  Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.7/64.7 kB 9.0 MB/s eta 0:00:00
+Collecting pika
+  Downloading pika-1.3.2-py3-none-any.whl (155 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.4/155.4 kB 18.8 MB/s eta 0:00:00
+Collecting prometheus_client
+  Downloading prometheus_client-0.24.1-py3-none-any.whl (64 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.1/64.1 kB 8.9 MB/s eta 0:00:00
+Collecting opentracing
+  Downloading opentracing-2.4.0.tar.gz (46 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.2/46.2 kB 6.0 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting instana
+  Downloading instana-3.10.1-py3-none-any.whl (178 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 178.9/178.9 kB 21.7 MB/s eta 0:00:00
+Collecting itsdangerous>=2.2.0
+  Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Collecting blinker>=1.9.0
+  Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Collecting markupsafe>=2.1.1
+  Downloading markupsafe-3.0.3-cp39-cp39-musllinux_1_2_x86_64.whl (20 kB)
+Collecting werkzeug>=3.1.0
+  Downloading werkzeug-3.1.5-py3-none-any.whl (225 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 225.0/225.0 kB 25.3 MB/s eta 0:00:00
+Collecting click>=8.1.3
+  Downloading click-8.1.8-py3-none-any.whl (98 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.2/98.2 kB 13.5 MB/s eta 0:00:00
+Collecting importlib-metadata>=3.6.0
+  Downloading importlib_metadata-8.7.1-py3-none-any.whl (27 kB)
+Collecting jinja2>=3.1.2
+  Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 17.0 MB/s eta 0:00:00
+Collecting charset_normalizer<4,>=2
+  Downloading charset_normalizer-3.4.4-cp39-cp39-musllinux_1_2_x86_64.whl (155 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.4/155.4 kB 18.5 MB/s eta 0:00:00
+Collecting certifi>=2017.4.17
+  Downloading certifi-2026.1.4-py3-none-any.whl (152 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 152.9/152.9 kB 19.1 MB/s eta 0:00:00
+Collecting idna<4,>=2.5
+  Downloading idna-3.11-py3-none-any.whl (71 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.0/71.0 kB 9.9 MB/s eta 0:00:00
+Collecting urllib3<3,>=1.21.1
+  Downloading urllib3-2.6.3-py3-none-any.whl (131 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 131.6/131.6 kB 14.2 MB/s eta 0:00:00
+Collecting typing-extensions>=4.12.2
+  Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.6/44.6 kB 5.8 MB/s eta 0:00:00
+Collecting opentelemetry-semantic-conventions>=0.48b0
+  Downloading opentelemetry_semantic_conventions-0.60b1-py3-none-any.whl (219 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 220.0/220.0 kB 23.3 MB/s eta 0:00:00
+Collecting pyyaml>=6.0.2
+  Downloading pyyaml-6.0.3-cp39-cp39-musllinux_1_2_x86_64.whl (755 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 755.7/755.7 kB 36.4 MB/s eta 0:00:00
+Collecting opentelemetry-api>=1.27.0
+  Downloading opentelemetry_api-1.39.1-py3-none-any.whl (66 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.4/66.4 kB 8.4 MB/s eta 0:00:00
+Collecting fysom>=2.1.2
+  Downloading fysom-2.1.6.tar.gz (19 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting autowrapt>=1.0
+  Downloading autowrapt-1.0.tar.gz (2.7 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting wrapt>=1.10.4
+  Downloading wrapt-2.0.1-cp39-cp39-musllinux_1_2_x86_64.whl (113 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 113.2/113.2 kB 15.2 MB/s eta 0:00:00
+Collecting zipp>=3.20
+  Downloading zipp-3.23.0-py3-none-any.whl (10 kB)
+Building wheels for collected packages: uwsgi, opentracing, autowrapt, fysom
+  Building wheel for uwsgi (setup.py): started
+  Building wheel for uwsgi (setup.py): finished with status 'done'
+  Created wheel for uwsgi: filename=uwsgi-2.0.31-cp39-cp39-linux_x86_64.whl size=563965 sha256=444aeba7db5cf8ed285ea884bdd1c307ccb0b6d56b1622d958ff30f49860c865
+  Stored in directory: /root/.cache/pip/wheels/24/a5/03/5bd0ede15052bfde03cfa27de7101a4f3648fb7e726d1e9092
+  Building wheel for opentracing (setup.py): started
+  Building wheel for opentracing (setup.py): finished with status 'done'
+  Created wheel for opentracing: filename=opentracing-2.4.0-py3-none-any.whl size=51494 sha256=68250f83218afa91b7eb0f5e81d5f149a84f089ad01de1e018472e8411322bc5
+  Stored in directory: /root/.cache/pip/wheels/0e/04/66/96f4735d0c34974a4cc0601a5cc6965b5674d43ba435abb431
+  Building wheel for autowrapt (setup.py): started
+  Building wheel for autowrapt (setup.py): finished with status 'done'
+  Created wheel for autowrapt: filename=autowrapt-1.0-py3-none-any.whl size=3373 sha256=cd772fd67e21ab0aa99c5e2e8ee814e3fe8fb5de550c9c027366cbd5567fdcc7
+  Stored in directory: /root/.cache/pip/wheels/8b/74/c1/14ae99e81037fb17d5f62daac94997a10e00622c17904027d1
+  Building wheel for fysom (setup.py): started
+  Building wheel for fysom (setup.py): finished with status 'done'
+  Created wheel for fysom: filename=fysom-2.1.6-py3-none-any.whl size=8122 sha256=d6f5a1d722f1bfb4b885c6ce65006eab9de2b3d06b519c5e616b0042c23a179d
+  Stored in directory: /root/.cache/pip/wheels/30/e5/fc/7d9b8d622734259bfe2a5b36afdf36e9bb047c132e484798c8
+Successfully built uwsgi opentracing autowrapt fysom
+Installing collected packages: uwsgi, opentracing, fysom, zipp, wrapt, urllib3, typing-extensions, pyyaml, prometheus_client, pika, markupsafe, itsdangerous, idna, click, charset_normalizer, certifi, blinker, werkzeug, requests, jinja2, importlib-metadata, autowrapt, opentelemetry-api, Flask, opentelemetry-semantic-conventions, instana
+Successfully installed Flask-3.1.2 autowrapt-1.0 blinker-1.9.0 certifi-2026.1.4 charset_normalizer-3.4.4 click-8.1.8 fysom-2.1.6 idna-3.11 importlib-metadata-8.7.1 instana-3.10.1 itsdangerous-2.2.0 jinja2-3.1.6 markupsafe-3.0.3 opentelemetry-api-1.39.1 opentelemetry-semantic-conventions-0.60b1 opentracing-2.4.0 pika-1.3.2 prometheus_client-0.24.1 pyyaml-6.0.3 requests-2.32.5 typing-extensions-4.15.0 urllib3-2.6.3 uwsgi-2.0.31 werkzeug-3.1.5 wrapt-2.0.1 zipp-3.23.0
+[91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[0m[91m
+[notice] A new release of pip is available: 23.0.1 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+[0m ---> Removed intermediate container 8f980c3aa501
+ ---> f5abe051680c
+Step 6/16 : FROM python:3.9.25-alpine3.21
+ ---> a87fee7d2afa
+Step 7/16 : EXPOSE 8080
+ ---> Using cache
+ ---> 1c851b98fdbf
+Step 8/16 : WORKDIR /opt/server
+ ---> Using cache
+ ---> e53112b4ab07
+Step 9/16 : RUN apk add --no-cache pcre
+ ---> Using cache
+ ---> 810914a97a07
+Step 10/16 : RUN apk update && apk upgrade
+ ---> Using cache
+ ---> b4d5e216bf00
+Step 11/16 : RUN addgroup -S roboshop && adduser -S roboshop -G roboshop
+ ---> Using cache
+ ---> 020c5598a6e2
+Step 12/16 : COPY --from=builder /install /usr/local
+ ---> 3cd7db94f870
+Step 13/16 : COPY --chown=roboshop:roboshop payment.ini *.py requirements.txt ./
+ ---> cc2fea95f916
+Step 14/16 : ENV CART_HOST="cart"   CART_PORT="8080"   USER_HOST="user"   USER_PORT="8080"   AMQP_HOST="rabbitmq"   AMQP_USER="roboshop"   AMQP_PASS="roboshop123"
+ ---> Running in f726172a473a
+ ---> Removed intermediate container f726172a473a
+ ---> 9447fc98a81a
+Step 15/16 : USER roboshop
+ ---> Running in f1a4932c36a4
+ ---> Removed intermediate container f1a4932c36a4
+ ---> a54b307d06e2
+Step 16/16 : CMD ["uwsgi", "--ini", "payment.ini"]
+ ---> Running in 04f5ec3c258c
+ ---> Removed intermediate container 04f5ec3c258c
+ ---> c10e33531544
+Successfully built c10e33531544
+Successfully tagged roboshop/payment:1.0.0
++ docker tag roboshop/payment:1.0.0 471112667143.dkr.ecr.us-east-1.amazonaws.com/roboshop/payment:1.0.0
++ docker images
+REPOSITORY                                                        TAG                  IMAGE ID       CREATED                  SIZE
+471112667143.dkr.ecr.us-east-1.amazonaws.com/roboshop/payment     1.0.0                c10e33531544   Less than a second ago   70.6MB
+roboshop/payment                                                  1.0.0                c10e33531544   Less than a second ago   70.6MB
+<none>                                                            <none>               f5abe051680c   2 seconds ago            337MB
+<none>                                                            <none>               adbbb7f15b56   4 minutes ago            182MB
+471112667143.dkr.ecr.us-east-1.amazonaws.com/roboshop/payment     <none>               33d05dd422e2   12 minutes ago           70.6MB
+roboshop/user                                                     1.0.0                5745fcbac2d3   About an hour ago        168MB
+471112667143.dkr.ecr.us-east-1.amazonaws.com/roboshop/user        1.0.0                5745fcbac2d3   About an hour ago        168MB
+471112667143.dkr.ecr.us-east-1.amazonaws.com/roboshop/cart        1.0.0                75aa0de2ee50   About an hour ago        156MB
+roboshop/cart                                                     1.0.0                75aa0de2ee50   About an hour ago        156MB
+471112667143.dkr.ecr.us-east-1.amazonaws.com/roboshop/catalogue   1.1.0                a340de3cc6c2   3 hours ago              167MB
+roboshop/catalogue                                                1.1.0                a340de3cc6c2   3 hours ago              167MB
+python                                                            3.9.25-alpine3.21    a87fee7d2afa   2 months ago             50.7MB
+node                                                              20.19.5-alpine3.21   a68fec5831d8   3 months ago             134MB
++ docker push 471112667143.dkr.ecr.us-east-1.amazonaws.com/roboshop/payment:1.0.0
+The push refers to repository [471112667143.dkr.ecr.us-east-1.amazonaws.com/roboshop/payment]
+0efa553f72aa: Preparing
+7a678f7bdece: Preparing
+179c14cd1b29: Preparing
+4cd1c2c4a596: Preparing
+94b340ed97d3: Preparing
+37fd4380ab1c: Preparing
+abbcafde92e0: Preparing
+51c440f81778: Preparing
+3b856be2f954: Preparing
+922ec217407c: Preparing
+37fd4380ab1c: Waiting
+abbcafde92e0: Waiting
+51c440f81778: Waiting
+3b856be2f954: Waiting
+922ec217407c: Waiting
+4cd1c2c4a596: Layer already exists
+179c14cd1b29: Layer already exists
+94b340ed97d3: Layer already exists
+37fd4380ab1c: Layer already exists
+51c440f81778: Layer already exists
+abbcafde92e0: Layer already exists
+3b856be2f954: Layer already exists
+922ec217407c: Layer already exists
+0efa553f72aa: Pushed
+7a678f7bdece: Pushed
+1.0.0: digest: sha256:5dc6ad4c250e50f1538daf6c5f5caafb6a7ab71e31c055f669ce5e0f827677d1 size: 2411
+[8mha:////4KuffyE+/aSafo403pxMrRVUOALjHUpAsQdvPoC7Yg+QAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJCgQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wA7hxSLb4AAAA=[0m[Pipeline] }
+[8mha:////4Lmw2NMMZkdYhPmKz9NNT5MK5Z2iqK3q3BDv6ltFUvaFAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIZCQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKU+22u3eED1l7B3L4AAAA=[0m[Pipeline] // withAWS
+[8mha:////4HxxLOq6zoBKi1uCe/IPt5LN1tbQGN5oFfvPVH+osgBlAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSAKJAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw/ikCKHvgAAAA==[0m[Pipeline] }
+[8mha:////4HytvjlHSeMAxm/k82ZLSjW/b1YGViQ/7e2BPUApT7OFAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSBBpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOW+zlUfPsyQIO2+AAAA[0m[Pipeline] // script
+[8mha:////4IJyo3qSKs2tTUIVhp1/rSaK8JuZ+oqNANuNsCOiC5x/AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMJpSIWoaC03vMAkh3Fi3Rnbwal4EV/jD1hEomKL1c4283rDOgY4cjBiQBotxc4K7yZTlsgcxqvjLAa+iI4pskOhMCvu8bSg4oSwpKphJWGD1DmOlkyCrRz0QzdOk2nOKZTvIKG2/R2eUMliTjqkL8wBdrepj0w/z18BzN4nqNu21L79ANMSdb++AAAA[0m[Pipeline] }
+[8mha:////4FNBZlwgg2nE97oJMqUJd9a0swA757nlpTPIdifWhO85AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSBBpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOX+kKuuP+tQ5k6+AAAA[0m[Pipeline] // stage
+[8mha:////4FRHV7kHmPlfJSK88z0nxahSL+1brky9l4q1KufRwtD1AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDBUDYuoaZeEEIQkhbfR/SVLaiRNxNe5AoBITHizbkvWeL6higCMFyzqDvcOoHBv8aHNiE4X+4mliHZ2ZIozkDRNmEqRNu1RBycCiooQVh7VB5Sk6tAk2vJN3WXuJtj6lkLcDh9LpGzyg4JmcZEjfMgfYXkcdCX+cvwCYhwTlrsnW7D/P6g1NyvGPwgAAAA==[0m[Pipeline] stage
+[8mha:////4HDDNwCMuNheSaV8W1o6OKOPL+5VyTquaV4C8BYg7iFeAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QiAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LDyb6zSXCAAAA[0m[Pipeline] { (Trivy Scan)
+[8mha:////4M82s5zkJ3r+W3jKajsKLn5cRf/lrVogrB8Ulobhc1WrAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0XdaX3CAAAA[0m[Pipeline] script
+[8mha:////4GK1pF0YCvZyk8KgkzHMrWrpanNKuKwAUArWNFzj8UwYAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoiUBSSEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g3QSQCqwgAAAA==[0m[Pipeline] {
+[8mha:////4BUgwCDsiyms/2WXLaygZRRXbTAM+vLUdIDQBp0IMb5HAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICDQ2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBk5Fu7e+AAAA[0m[Pipeline] sh
++ trivy image --scanners vuln --severity HIGH,CRITICAL,MEDIUM --pkg-types os --exit-code 1 --format table --no-progress 471112667143.dkr.ecr.us-east-1.amazonaws.com/roboshop/payment:1.0.0
+2026-01-24T18:56:48Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-01-24T18:56:50Z	INFO	Detected OS	family="alpine" version="3.21.5"
+2026-01-24T18:56:50Z	INFO	[alpine] Detecting vulnerabilities...	os_version="3.21" repository="3.21" pkg_num=38
+
+Report Summary
+
+┌─────────────────────────────────────────────────────────────────────────────┬────────┬─────────────────┐
+│                                   Target                                    │  Type  │ Vulnerabilities │
+├─────────────────────────────────────────────────────────────────────────────┼────────┼─────────────────┤
+│ 471112667143.dkr.ecr.us-east-1.amazonaws.com/roboshop/payment:1.0.0 (alpine │ alpine │        0        │
+│ 3.21.5)                                                                     │        │                 │
+└─────────────────────────────────────────────────────────────────────────────┴────────┴─────────────────┘
+Legend:
+- '-': Not scanned
+- '0': Clean (no security findings detected)
+
+[8mha:////4OpSjt1/qAQB7J6VeZPZfJXdbIXE6uCloexe2VcYKztGAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbN/uuxNG+AAAA[0m[Pipeline] }
+[8mha:////4O9R8jVC8FCnJHHlDfyYK/dfbw8tQ0mNHtHSiNule8HrAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIJAQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wAOZZpSL4AAAA=[0m[Pipeline] // script
+[8mha:////4Cjov+yczia3ZlKAXzGrot6Q0eSUVwZaXn+H1kDHhEbIAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSAEJCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw8XlmsivgAAAA==[0m[Pipeline] }
+[8mha:////4Bea0yactdJDlRdr3aCEvUDe8mtisYQMtlR4zOwJ1w8SAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSBQpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOW+zlUfPiNYiHm+AAAA[0m[Pipeline] // stage
+[8mha:////4Fic+4Z5T3uiA5lQtmNs6p8HnKYerBejkposQ28S31vtAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDHRBTF2jLJwgJCGkjf4vSUo7cSKuxh0IVGLCg2Vbst7zBVUMcKRgWWewdxiVY4MfbU5sotBfPE2sozNThJG8YcJMgrRplyooGVhUlLDisDaoPEWHNsGGd/Iuay/R1qcU8nbgUDp9gwcUPJOTDOlb5gDb66gj4Y/zFwDzkKDc7bM1zedZvQF1A0V1wgAAAA==[0m[Pipeline] stage
+[8mha:////4HFuPfpLBESbexkouemY/A7ak5A/VGKcKkpiNKvZONfuAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KwNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPXl9jU8IAAAA=[0m[Pipeline] { (Trigger Dev Deploy)
+[8mha:////4PxCRWjvD03UxTsXWoQ408x1vB0QQDQmPA+eogIrbLOxAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0AyTE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAUsyu2PCAAAA[0m[Pipeline] script
+[8mha:////4NZ6KMnjKKaROo74/8F/5DgjSlKYjiF31Pgey6D8vmzvAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QyDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASgVHzvCAAAA[0m[Pipeline] {
+[8mha:////4EJdzsZIPjct9zetdRN51ouQoxsMalOVb/uzgovNEVFTAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCBUIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AHrW/o6vgAAAA==[0m[Pipeline] build
+WARNING: Unknown parameter(s) found for class type 'org.jenkinsci.plugins.workflow.support.steps.build.BuildTriggerStep': propogate
+Scheduling project: [8mha:////4HRNywTMaFRfkPc18u8nMPHM5yDszQoFXdOIK/HPB5wfAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzJEgZF/az8JP2g/KT84oz8AjCnILEyNzWvRDcltSAnv1IfABDr37HWAAAA[0mRoboshop » payment-deploy
+[8mha:////4O+yAIF68BEe8qElmHGO1bxXFolWZqjz5oPOethfc03cAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiGhBCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw9Fb/uIvgAAAA==[0m[Pipeline] }
+[8mha:////4JVzxlXNEq16OOZfYEz8djHjOL0d1bK5ZKbINWQWl9A5AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUQASSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wAfS1oeb4AAAA=[0m[Pipeline] // script
+[8mha:////4NTmLrJlHq/XFy/hTyJSmwEfbEK7vwoawPac6b3kAzNVAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIJECUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkFZ73Md6g9J44sivgAAAA==[0m[Pipeline] }
+[8mha:////4MYktTVQPW8rYmDmAaABp1M8acA2BNwSSL7H1neI16hVAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMJpUCgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJygP+1x1/QFn44lIvgAAAA==[0m[Pipeline] // stage
+[8mha:////4Lf28mSu1ITQaoxZKappBvqH32i+vJsE5Ep3JDsCyjsaAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDBUDYuoaZeEEIQkhbfR/SVLaiRNxNe5AoBITHizbkvWeL6higCMFyzqDvcOoHBv8aHNiE4X+4mliHZ2ZIozkDRNmEqRNu1RBycCiooQVh7VB5Sk6tAk2vJN3WXuJtj6lkLcDh9LpGzyg4JmcZEjfMgfYXkcdCX+cvwCYhwTlrsm2bz7P6g1veqZVwgAAAA==[0m[Pipeline] stage
+[8mha:////4A8FnLbCBOgc6nnWKPcGEG1NVtlBVEPTYfiCIBzWrJSrAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0AgbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxASGtDzzCAAAA[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4FrIFt83OuayPSwDq4T9JQt0Bn2ChIdsXtjGwe6iMyPwAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSkQJR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMPkEZb3/VO3fW71ZT74AAAA=[0m[Pipeline] echo
+I will always say Hello again!
+[8mha:////4HX3dAz3ns89chDF4mTOuGTdfSvZ1+294Fa8NAEe8JjLAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSARKiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyt32U/vwBpShwci+AAAA[0m[Pipeline] cleanWs
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+[8mha:////4EQ9AhJpibZtJCNPRH95WepBqqTqn8to9EpzrBysIq9DAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSgRCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyt32U/vwBtWQ2tG+AAAA[0m[Pipeline] echo
+I will run if success
+[8mha:////4IK7ulwKK7XnRcWocmeyfz736nmsZ4341VNxA8uwGmHRAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCBUgoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDNtd+9wHZ4Es8vgAAAA==[0m[Pipeline] }
+[8mha:////4Fvc4tD4Dq1HAxN9hQRdNQzK8slSA1UNUOUYSMYpm48BAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCgQSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4TysM21330AxmIebr4AAAA=[0m[Pipeline] // stage
+[8mha:////4B5kwdI1fs1v+kfjmJsemZh6HS/z6PCzheypWi/d5OYbAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikJCQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKUh12u7f4D7rfQvr4AAAA=[0m[Pipeline] }
+[8mha:////4L+o0GtTvj/j7fYWUQ/SjlZiIPSegLeBJfYSum2mGmq2AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBAUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4TysMu13X8A3VSLAr4AAAA=[0m[Pipeline] // timeout
+[8mha:////4BcbikDrMxx0QqriT9zrdQdJv/Bp2obpjwpkY63tNDoeAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBAUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4TysM+13X0AxvHqgb4AAAA=[0m[Pipeline] }
+[8mha:////4N9OlEwytGt+N0IR2SrmHS2m0eewpefxcoGSTqcDQh2/AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikJCQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKUh32u7e4D9RKxPb4AAAA=[0m[Pipeline] // withEnv
+[8mha:////4CMSzyJPeceqjQiIy/w1MuKnWBbWVLpphMcwJUsSith6AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiNAgJUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkF52Oeq6w/hMSwivgAAAA==[0m[Pipeline] }
+[8mha:////4MNZfkqCSKRxZZOdnys9Du5Uo6jK8METLFG0TJsU48fHAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICFUgoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDPtdu+wHS0neevgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4FnfkWBIR8XGXawU8snx7q99RxfK3jWFTvlhgCQx4ogsAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IsDiTGybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FeVkKsv0HjDE6xb0AAAA=[0m[Pipeline] }
+[8mha:////4CoupRg+Jba/iN7Mw2ps88+wLHDZCjnGHtjQW0FZuZ+3AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpaECIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcXZNsPn40+Zr0AAAA=[0m[Pipeline] // node
+[8mha:////4MX8YZLTspD3WjsKCUtzCqigM+AEAq2wRZbkkusOMJu0AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJBdAhR0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Q77eCbPcB3Qx1170AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS
