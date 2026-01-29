@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.git.GitBranchSCMRevision plugin="git@5.9.0">
+  <head class="jenkins.plugins.git.GitBranchSCMHead">
+    <name>new-feature</name>
+  </head>
+  <hash>cefac3b284710a0a4d03d65e9e8df2dc351d60e3</hash>
+</jenkins.plugins.git.GitBranchSCMRevision>

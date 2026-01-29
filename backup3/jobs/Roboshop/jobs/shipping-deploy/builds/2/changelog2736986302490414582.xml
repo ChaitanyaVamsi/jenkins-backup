@@ -1,0 +1,30 @@
+commit ee48038216abcc12c9d49140508c7ab4822d1506
+tree ff137c2d023c53707d215241bdc9c29b53420b26
+parent 2e73e063b8917955bd9caa04a734af9ccf8de899
+author chaitanya <vamsi.blaze1@gmail.com> 2026-01-26 00:20:26 +0530
+committer chaitanya <vamsi.blaze1@gmail.com> 2026-01-26 00:20:26 +0530
+
+    updated
+
+
+:100644 100644 19e43f186896f710540d805d2f17c97b565225ab 540806f95efd8cfc1c2a9cb9be7476ee429f24eb M	templates/manifest.yaml
+commit 2e73e063b8917955bd9caa04a734af9ccf8de899
+tree 91e356256550d1c4ecd70cc2cdef7d8c1c767ac7
+parent 07ec183ed4d81d9966212f4b0811745850da43c2
+author chaitanya <vamsi.blaze1@gmail.com> 2026-01-25 23:58:26 +0530
+committer chaitanya <vamsi.blaze1@gmail.com> 2026-01-25 23:58:26 +0530
+
+    updated
+
+
+:100644 100644 c6405b9efd320d026927f57bba5b17967a88eeff 19e43f186896f710540d805d2f17c97b565225ab M	templates/manifest.yaml
+commit 07ec183ed4d81d9966212f4b0811745850da43c2
+tree 8952ca0305885702f39e27e2fffce2da105746a8
+parent a0783dd49401cb0069c929f334c8bb3b1b4a121d
+author chaitanya <vamsi.blaze1@gmail.com> 2026-01-25 23:44:04 +0530
+committer chaitanya <vamsi.blaze1@gmail.com> 2026-01-25 23:44:04 +0530
+
+    updated
+
+
+:100644 100644 f4de274e3ec87a3dcf4fb53764bf7e2949e349ee c6405b9efd320d026927f57bba5b17967a88eeff M	templates/manifest.yaml

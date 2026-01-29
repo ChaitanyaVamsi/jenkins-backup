@@ -1,0 +1,43 @@
+Branch indexing
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/caches/git-a2d813de53cc54875a1054b134bc3c90/.git # timeout=10
+Setting origin to https://github.com/ChaitanyaVamsi/jenkins-catalogue.git
+ > git config remote.origin.url https://github.com/ChaitanyaVamsi/jenkins-catalogue.git # timeout=10
+Fetching origin...
+Fetching upstream changes from origin
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --no-tags --force --progress -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/main
+Seen branch in repository origin/new-feature
+Seen 2 remote branches
+Obtained JenkinsFile from fbebf5632d5111fd3f0e75c9824a9e120e6b1044
+Loading library jenkins-shared-library@main
+Attempting to resolve main from remote references...
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git ls-remote -h -- https://github.com/ChaitanyaVamsi/jenkins-shared-library.git # timeout=10
+Found match: refs/heads/main revision 9a234faa63082ba140db5a40ed67afe207a2cd5c
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/ChaitanyaVamsi/jenkins-shared-library.git
+ > git init /var/lib/jenkins/workspace/Roboshop_catalogue-ci_main@libs/8d5c6fd50fc3578b228afca4badd2d9f2630b478e3101a415a7df7fa02d54f07 # timeout=10
+Fetching upstream changes from https://github.com/ChaitanyaVamsi/jenkins-shared-library.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --no-tags --force --progress -- https://github.com/ChaitanyaVamsi/jenkins-shared-library.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/ChaitanyaVamsi/jenkins-shared-library.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+Checking out Revision 9a234faa63082ba140db5a40ed67afe207a2cd5c (main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9a234faa63082ba140db5a40ed67afe207a2cd5c # timeout=10
+Commit message: "updated"
+First time build. Skipping changelog.
+[8mha:////4AEgP8bis4FSfTQIHJCrCiBkM3WfQqS9PM/ZUt4vCmhUAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4B8cytMjldPZxzDXFkn2wi34h5fk+D+PYYvXb3vtmZEUAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbaGmsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfya1RxvAAAAA==[0m[Pipeline] echo
+Follow proper process
+[8mha:////4Jlgcw9PT5TPxVfdxlXDwdR6ZuENFYO02ywrGXu8UrJFAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbGDtjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9bqvXovAAAAA==[0m[Pipeline] End of Pipeline
+Finished: SUCCESS
